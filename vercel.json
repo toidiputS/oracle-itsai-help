@@ -1,0 +1,14 @@
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors 'self' https://itsyouonline.com https://www.itsyouonline.com"
+        }
+      ]
+    }
+  ]
+}
